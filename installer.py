@@ -6,6 +6,7 @@ from __future__ import print_function
 import os
 import sys
 import subprocess
+import shutil
 
 from datetime import datetime
 
@@ -28,7 +29,9 @@ class Insaller:
 		self.srcFolder = self.installerPath(srcFolder)
 		self.dstFolder = self.userPath(dstFolder)
 		self.bkpFolder = self.installerPath(BACKUP_F + "/" + name + "/")
-		self.mkdirs(self.bkpFolder)
+		
+		if self.shouldBackup():
+			self.mkdirs(self.bkpFolder)
 
 	def install(self):
 		self.message()
@@ -36,7 +39,10 @@ class Insaller:
 		self.mkdirs(self.dstFolder)
 		for f in os.listdir(self.srcFolder):
 			if self.needsBackup(f):
-				self.backup(f)
+				if self.shouldBackup():
+					self.backup(f)
+				else:
+					self.remove(f)
 			os.symlink(self.srcFolder + f, self.dstFolder + f)
 		print("\n => Done installing", self.name)
 
@@ -62,8 +68,22 @@ class Insaller:
 	def needsBackup(self, file):
 		return os.path.exists(self.dstFolder + file)
 
+	def shouldBackup(self):
+		return not (len(sys.argv) == 2 and sys.argv[1] == "NO_BACKUP")
+
 	def backup(self, file):
 		os.rename(self.dstFolder + file, self.bkpFolder + file)
+
+	def remove(self, file):
+		f = self.dstFolder + file
+		if os.path.islink(f):
+			os.unlink(f)
+		elif os.path.isfile(f):
+			os.remove(f)
+		elif os.path.isdir(f):
+			shutil.rmtree(f)
+		else:
+			raise Exception('Argument ' + file + ' is not a file or a link or a folder!')
 
 	def installerPath(self, folder):
 		return self.userPath(os.path.dirname(os.path.realpath(__file__)) + '/' + folder)
@@ -81,5 +101,6 @@ class Insaller:
 		print(msg)
 		print("  -   From:", self.srcFolder)
 		print("  -     To:", self.dstFolder)
-		print("  - Backup:", self.bkpFolder)
+		if self.shouldBackup():
+			print("  - Backup:", self.bkpFolder)
 
