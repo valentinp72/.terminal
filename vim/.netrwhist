@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/Valentin/.oh-my-zsh'
-let g:netrw_dirhist_2='/Users/Valentin/git/picross/src/UI/Frames'
-let g:netrw_dirhist_3='/Users/Valentin/git/picross/src/UI/Assets'
-let g:netrw_dirhist_4='/Users/Valentin/git/picross/src/UI'
-let g:netrw_dirhist_5='/Users/Valentin/git/picross/src/UI/Frames/Game'
-let g:netrw_dirhist_6='/Users/Valentin/git/picross/build/ruby'
-let g:netrw_dirhist_7='/Users/Valentin/git/picross/src/UI/Frames/Settings'
-let g:netrw_dirhist_8='/Users/Valentin/Downloads'
-let g:netrw_dirhist_9='/Users/Valentin/git/codingProblems/2018/september'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/Valentin/git/l3/l3-prolog/TPs/TP1_Bis'
