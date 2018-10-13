@@ -11,6 +11,14 @@ mkdir -p ~/git/.terminal &&\
 git clone https://github.com/valentinp72/.terminal.git ~/git/.terminal &&\
 ~/git/.terminal/install.py
 ```
+
+On your first vim boot, you'll need to install all the plugins. To do that, run :
+
+```shell
+vim +PlugInstall # you'll probably see many errors, that's normal, press Enter
+```
+Wait for all plugins to install, then quit vim.
+
 ## How to update:
 
 Copy and paste this into a terminal:
@@ -21,4 +29,5 @@ git pull &&\
 cd - &&\
 ~/git/.terminal/install.py NO_BACKUP
 ```
+Do not forget to install new plugins with `:PlugInstall`.
 

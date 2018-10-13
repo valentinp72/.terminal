@@ -32,3 +32,6 @@ set backspace=2
 
 " Arrows key can be used to move between lines
 set whichwrap+=<,>,[,]
+
+" Change default update time for Git-Gutter (default 4000ms)
+set updatetime=750
