@@ -53,3 +53,6 @@ Plug 'vim-python/python-syntax'
 
 " A nicer Python indentation style for vim
 Plug 'Vimjas/vim-python-pep8-indent'
+
+" A Filetype plugin for csv files 
+Plug 'chrisbra/csv.vim'
