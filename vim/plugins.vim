@@ -59,3 +59,6 @@ Plug 'chrisbra/csv.vim'
 
 " Prolog integration
 Plug 'adimit/prolog.vim'
+
+" Better JavaScript support
+Plug 'pangloss/vim-javascript'
