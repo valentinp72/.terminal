@@ -16,7 +16,7 @@ tmuxDSTFolder = "~/"
 #######
 # VIM #
 #######
-vimDeps      = ["vim", "ruby"]
+vimDeps      = ["vim"]
 vimSRCFolder = "vim/"
 vimDSTFolder = "~/.vim/"
 

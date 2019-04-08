@@ -62,3 +62,6 @@ Plug 'adimit/prolog.vim'
 
 " Better JavaScript support
 Plug 'pangloss/vim-javascript'
+
+" Better markdown
+Plug 'plasticboy/vim-markdown'

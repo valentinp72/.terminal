@@ -70,10 +70,10 @@ let g:airline#extensions#syntastic#enabled = 1
 let g:syntastic_check_on_open = 1
 
 " Symbols for errors and warnings
-let g:syntastic_error_symbol = '❌'
-let g:syntastic_style_error_symbol = '⁉️'
-let g:syntastic_warning_symbol = '⚠️'
-let g:syntastic_style_warning_symbol = '💩'
+let g:syntastic_error_symbol = '╳'
+let g:syntastic_style_error_symbol = '╳'
+let g:syntastic_warning_symbol = '⚠︎'
+let g:syntastic_style_warning_symbol = '⚠︎'
 
 " Airline text
 let g:airline#extensions#syntastic#stl_format_err = '%e error(s)'
@@ -94,3 +94,10 @@ let g:ctrlp_working_path_mode = 'a'
 let g:python_highlight_all = 1
 
 let g:gitgutter_terminal_reports_focus=0
+
+" --------------------------
+" - MARKDOWN CONFIGURATION -
+" --------------------------
+
+" disable autofolding
+let g:vim_markdown_folding_disabled = 1
