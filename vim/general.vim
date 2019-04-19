@@ -34,4 +34,7 @@ set backspace=2
 set whichwrap+=<,>,[,]
 
 " Change default update time for Git-Gutter (default 4000ms)
-set updatetime=750
+set updatetime=2000
+
+" Enable incremental search
+set incsearch
