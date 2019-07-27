@@ -38,6 +38,9 @@ Plug 'vim-airline/vim-airline-themes'
 " Show git diff
 Plug 'airblade/vim-gitgutter'
 
+" Multiple cursors
+Plug 'terryma/vim-multiple-cursors'
+
 """""""""""""
 " LANGUAGES "
 """""""""""""

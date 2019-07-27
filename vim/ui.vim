@@ -70,10 +70,10 @@ let g:airline#extensions#syntastic#enabled = 1
 let g:syntastic_check_on_open = 1
 
 " Symbols for errors and warnings
-let g:syntastic_error_symbol = '╳'
-let g:syntastic_style_error_symbol = '╳'
-let g:syntastic_warning_symbol = '⚠︎'
-let g:syntastic_style_warning_symbol = '⚠︎'
+"let g:syntastic_error_symbol = 'x'
+"let g:syntastic_style_error_symbol = '╳'
+"let g:syntastic_warning_symbol = '⚠︎'
+"let g:syntastic_style_warning_symbol = '⚠︎'
 
 " Airline text
 let g:airline#extensions#syntastic#stl_format_err = '%e error(s)'

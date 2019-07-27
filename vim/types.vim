@@ -10,3 +10,6 @@ let g:javascript_plugin_jsdoc = 1
 
 " Java, disable auto syntastic
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['java'] }
+
+" Python linter
+let g:syntastic_python_checkers = ['flake8'] " or pylint
