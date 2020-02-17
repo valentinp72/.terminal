@@ -59,7 +59,7 @@ class Insaller:
 	def checkDependencies(self):
 		print("  - Checking dependencies:")
 		for dep in self.dependencies:
-			if not self.programExists(dep): error("\nMissing " + dep + ". Exiting.")
+			if not self.programExists(dep): print("\nMissing " + dep + ". Exiting.")
 
 	def mkdirs(self, folder):
 		if not os.path.exists(folder):
