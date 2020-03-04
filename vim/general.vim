@@ -21,6 +21,9 @@ set cindent      " better indent for C
 set tabstop=4    " indents width
 set shiftwidth=4 " an indent per tab
 
+" Allow history to be saved even when changing active buffer
+set hidden
+
 " Swap files not in the same folder
 set directory=$HOME/.vim/swapfiles/ 
 
