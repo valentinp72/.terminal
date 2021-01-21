@@ -41,6 +41,9 @@ Plug 'airblade/vim-gitgutter'
 " Multiple cursors
 Plug 'terryma/vim-multiple-cursors'
 
+" No more :set paste when pasting
+Plug 'ConradIrwin/vim-bracketed-paste'
+
 """""""""""""
 " LANGUAGES "
 """""""""""""
