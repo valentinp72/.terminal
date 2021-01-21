@@ -3,3 +3,5 @@ __pycache__
 backups/
 *.pyc
 *.swp
+tmux/.tmux/resurrect/
+swapfiles/
