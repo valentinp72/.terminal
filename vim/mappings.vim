@@ -5,6 +5,9 @@ map <C-z> u
 " Disable search results with Enter
 nnoremap <CR> :noh<CR><CR>
 
+" Allow :qw to save and quit (:wq)
+cnoreabbrev qw wq
+
 " -----------
 " - BUFFERS -
 " -----------
