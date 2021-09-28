@@ -8,7 +8,7 @@ Copy and paste this into a terminal:
 
 ```shell
 mkdir -p ~/git/.terminal &&\
-git clone https://github.com/valentinp72/.terminal.git ~/git/.terminal &&\
+git clone git@github.com:valentinp72/.terminal.git ~/git/.terminal &&\
 ~/git/.terminal/install.py
 ```
 
