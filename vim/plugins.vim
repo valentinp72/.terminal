@@ -44,6 +44,9 @@ Plug 'terryma/vim-multiple-cursors'
 " No more :set paste when pasting
 Plug 'ConradIrwin/vim-bracketed-paste'
 
+" Unix commands like :Move to rename a file and buffer
+Plug 'tpope/vim-eunuch'
+
 """""""""""""
 " LANGUAGES "
 """""""""""""

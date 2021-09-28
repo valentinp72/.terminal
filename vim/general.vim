@@ -39,5 +39,9 @@ set whichwrap+=<,>,[,]
 " Change default update time for Git-Gutter (default 4000ms)
 set updatetime=2000
 
+" Less delay when pressing esc to switch from insert to normal
+set timeoutlen=1000
+set ttimeoutlen=50
+
 " Enable incremental search
 set incsearch
