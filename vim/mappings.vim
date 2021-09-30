@@ -1,9 +1,12 @@
 
-" CTRL-Z to undo
-map <C-z> u
+" No longer need to shift to escape
+nmap ; :
 
 " Disable search results with Enter
 nnoremap <CR> :noh<CR><CR>
+
+" Allow :qw to save and quit (:wq)
+cnoreabbrev qw wq
 
 " -----------
 " - BUFFERS -
