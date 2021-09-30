@@ -71,3 +71,9 @@ Plug 'pangloss/vim-javascript'
 
 " Better markdown
 Plug 'plasticboy/vim-markdown'
+
+" Arduino
+" let g:arduino_cmd = '/Applications/Arduino.app/Contents/MacOS/Arduino'
+" let g:arduino_dir = '/Applications/Arduino.app/Contents/MacOS'
+Plug 'stevearc/vim-arduino'
+
