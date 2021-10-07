@@ -12,6 +12,19 @@
 set t_Co=256
 
 " Set colorscheme and background
+let g:PaperColor_Theme_Options = {
+  \   'language': {
+  \     'python': {
+  \       'highlight_builtins' : 1
+  \     },
+  \     'cpp': {
+  \       'highlight_standard_library': 1
+  \     },
+  \     'c': {
+  \       'highlight_builtins' : 1
+  \     }
+  \   }
+  \ }
 colorscheme PaperColor
 set background=dark
 
@@ -91,6 +104,7 @@ highlight link SyntasticStyleWarningSign SignColumn
 let g:ctrlp_working_path_mode = 'a'
 
 " Enable python-syntax highlighting
+let g:python_print_as_function = 1
 let g:python_highlight_all = 1
 
 let g:gitgutter_terminal_reports_focus=0
