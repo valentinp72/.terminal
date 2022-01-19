@@ -47,6 +47,13 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 " Unix commands like :Move to rename a file and buffer
 Plug 'tpope/vim-eunuch'
 
+" Yank show what was yanked
+Plug 'machakann/vim-highlightedyank'
+
+" New motions
+Plug 'haya14busa/vim-edgemotion'
+
+
 """""""""""""
 " LANGUAGES "
 """""""""""""

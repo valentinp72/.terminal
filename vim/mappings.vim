@@ -8,6 +8,11 @@ nnoremap <CR> :noh<CR><CR>
 " Allow :qw to save and quit (:wq)
 cnoreabbrev qw wq
 
+" edgemotion up and down mapping using shift + up / shift + down
+map <s-Down> <Plug>(edgemotion-j)
+map <s-Up> <Plug>(edgemotion-k)
+
+
 " -----------
 " - BUFFERS -
 " -----------
