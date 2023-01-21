@@ -25,6 +25,7 @@ let g:PaperColor_Theme_Options = {
   \     }
   \   }
   \ }
+let g:airline_theme='papercolor'
 colorscheme PaperColor
 set background=dark
 

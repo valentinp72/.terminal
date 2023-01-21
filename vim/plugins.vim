@@ -47,6 +47,13 @@ Plug 'ConradIrwin/vim-bracketed-paste'
 " Unix commands like :Move to rename a file and buffer
 Plug 'tpope/vim-eunuch'
 
+" Yank show what was yanked
+Plug 'machakann/vim-highlightedyank'
+
+" New motions
+Plug 'haya14busa/vim-edgemotion'
+
+
 """""""""""""
 " LANGUAGES "
 """""""""""""
@@ -74,3 +81,9 @@ Plug 'pangloss/vim-javascript'
 
 " Better markdown
 Plug 'plasticboy/vim-markdown'
+
+" Arduino
+" let g:arduino_cmd = '/Applications/Arduino.app/Contents/MacOS/Arduino'
+" let g:arduino_dir = '/Applications/Arduino.app/Contents/MacOS'
+Plug 'stevearc/vim-arduino'
+
