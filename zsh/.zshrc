@@ -21,8 +21,8 @@ source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 autoload -U colors && colors
 autoload -Uz vcs_info        # infos about git
 
-# move .zcompdump to othe folder
-compinit -d ~/.cache/zsh/zcompdump-${SHORT_HOST}-${ZSH_VERSION}
+# move .zcompdump to one file only
+compinit -d $HOME/.zcompdump
 
 NEWLINE=$'\n' # the newline character
 
