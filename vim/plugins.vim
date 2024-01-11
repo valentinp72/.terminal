@@ -53,6 +53,8 @@ Plug 'machakann/vim-highlightedyank'
 " New motions
 Plug 'haya14busa/vim-edgemotion'
 
+" Fuzzy search in files
+Plug 'junegunn/fzf.vim'
 
 """""""""""""
 " LANGUAGES "

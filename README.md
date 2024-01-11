@@ -1,6 +1,17 @@
 # .terminal
 Vim, tmux, and other configuration files
 
+## Requirements
+
+- `git`
+- `vim`
+- `tmux`
+- `zsh`
+- `python3`
+- for vim [fuzzy find](https://github.com/junegunn/fzf.vim):
+	- [fzf](https://github.com/junegunn/fzf#installation)
+	- [the silver searcher](https://github.com/ggreer/the_silver_searcher)
+	- [bat](https://github.com/sharkdp/bat#installation) (for syntax highlighting)
 
 ## How to install:
 
