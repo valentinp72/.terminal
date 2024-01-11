@@ -54,6 +54,7 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'haya14busa/vim-edgemotion'
 
 " Fuzzy search in files
+Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
 """""""""""""
