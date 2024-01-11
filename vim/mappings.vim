@@ -12,8 +12,11 @@ cnoreabbrev qw wq
 map <s-Down> <Plug>(edgemotion-j)
 map <s-Up> <Plug>(edgemotion-k)
 
-" Search files with Ctrl + S
+" Search within files with Ctrl + S
 nnoremap <C-s> :Ag<CR>
+
+" Search files with Ctrl + P
+nnoremap <C-p> :Files<CR>
 
 " -----------
 " - BUFFERS -

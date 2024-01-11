@@ -24,7 +24,7 @@ Plug 'tpope/vim-commentary'
 Plug 'vim-syntastic/syntastic'
 
 " Files finder
-Plug 'kien/ctrlp.vim'
+" Plug 'kien/ctrlp.vim'
 
 " Autocompletion with tab
 Plug 'ervandew/supertab'
