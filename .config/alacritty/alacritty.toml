@@ -1,0 +1,19 @@
+live_config_reload = true
+
+[cursor]
+blink_interval = 750
+
+[cursor.style]
+blinking = "On"
+shape = "Beam"
+
+[scrolling]
+history = 10000
+
+[window]
+decorations = "none"
+startup_mode = "Fullscreen"
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
