@@ -11,8 +11,8 @@ shape = "Beam"
 history = 10000
 
 [window]
-decorations = "none"
-startup_mode = "Fullscreen"
+# decorations = "none"
+# startup_mode = "Fullscreen"
 
 [window.class]
 general = "Alacritty"
