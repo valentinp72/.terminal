@@ -34,7 +34,7 @@ font-1 = Symbols Nerd Font:size=12;style=Regular
 # https://www.nerdfonts.com/cheat-sheet
 
 modules-left = xworkspaces xwindow
-modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth bluetooth date info
+modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth bluetooth date powermenu
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -49,11 +49,14 @@ enable-ipc = true
 
 ; override-redirect = true
 
-[module/info]
+[module/powermenu]
 type = custom/text
-content-foreground = ${colors.primary}
+
 content = 󰟒
-click-left = $HOME/.local/bin/rofi-powermenu
+content-foreground = ${colors.primary}
+
+click-left = ~/.config/rofi/applets/bin/powermenu.sh
+click-right = powermenu_t1
 
 [module/xworkspaces]
 type = internal/xworkspaces
@@ -141,8 +144,8 @@ label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-format-disconnected = %{A1:$HOME/.config/bin/rofi-wifi:}<label-disconnected>%{A} 
-format-connected = %{A1:$HOME/.config/bin/rofi-wifi:}<label-connected>%{A} 
+format-disconnected = %{A1:$HOME/.local/bin/rofi-wifi:}<label-disconnected>%{A} 
+format-connected = %{A1:$HOME/.local/bin/rofi-wifi:}<label-connected>%{A} 
 label-connected = %{F#F0C674}󰖩 %ifname%%{F-} %essid% %local_ip%
 label-disconnected = 󱛅 
 

@@ -1,6 +1,10 @@
 #!/usr/bin/env sh
 
-CHOSEN=$(printf "Lock\nSuspend\nReboot\nShutdown\nLog Out" | rofi -dmenu -i -selected-row 0 -p "Power")
+
+CHOSEN=$(printf "Lock\nSuspend\nReboot\nShutdown\nLog Out" \
+	| rofi -dmenu -i -selected-row 0 -p "Power" \
+	-theme-str 'window {anchor: northeast; location: northwest;}' \
+)
 
 case "$CHOSEN" in
 	"Lock") lockscreen ;;
