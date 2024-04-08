@@ -23,6 +23,11 @@ let g:PaperColor_Theme_Options = {
   \     'c': {
   \       'highlight_builtins' : 1
   \     }
+  \   },
+  \   'theme': {
+  \     'default': {
+  \       'transparent_background': 1
+  \     }
   \   }
   \ }
 let g:airline_theme='papercolor'

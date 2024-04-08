@@ -11,7 +11,8 @@ theme="$type/$style"
 
 # Theme Elements
 prompt='Applications'
-mesg="Installed Packages : `pacman -Q | wc -l` (pacman)"
+# mesg="Installed Packages : `pacman -Q | wc -l` (pacman)"
+mesg="Toto"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
@@ -27,7 +28,7 @@ file_cmd='thunar'
 text_cmd='geany'
 web_cmd='firefox'
 music_cmd='alacritty -e ncmpcpp'
-setting_cmd='xfce4-settings-manager'
+setting_cmd='systemsettings5'
 
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`

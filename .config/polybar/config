@@ -104,6 +104,7 @@ format-volume = <ramp-volume> <label-volume>
 ramp-volume-0 = 󰕿
 ramp-volume-1 = 󰖀
 ramp-volume-2 = 󰕾
+ramp-volume-foreground = ${colors.primary}
 
 label-muted = 󰝟
 label-muted-foreground = ${colors.disabled}
@@ -130,7 +131,7 @@ label = %percentage_used:2%%
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = ""
+format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 label = %percentage:2%%
 
