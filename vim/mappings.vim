@@ -8,9 +8,9 @@ nnoremap <CR> :noh<CR><CR>
 " Allow :qw to save and quit (:wq)
 cnoreabbrev qw wq
 
-" edgemotion up and down mapping using shift + up / shift + down
-map <s-Down> <Plug>(edgemotion-j)
-map <s-Up> <Plug>(edgemotion-k)
+" edgemotion up and down mapping using page up and down keys 
+nnoremap <PageUp> <C-u>
+nnoremap <PageDown> <C-d>
 
 " Search within files with Ctrl + S
 nnoremap <C-s> :Ag<CR>
@@ -46,7 +46,6 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
-
 
 " ubuntu share clipboard (need to install xclip)
 set clipboard=unnamedplus

@@ -57,6 +57,12 @@ Plug 'haya14busa/vim-edgemotion'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 
+" Smooth scroll with CTRL+U/D/F/B
+Plug 'vim-scripts/Smooth-Scroll'
+
+" Minimap of the file
+Plug 'wfxr/minimap.vim'
+
 """""""""""""
 " LANGUAGES "
 """""""""""""
