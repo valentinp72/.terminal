@@ -58,3 +58,12 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ```
 
 4. A sample `.zshrc` is available in `zsh/.zshrc`
+
+```
+rofi
+rofi-dev
+qalc
+libtool
+libnotify-bin
+dolphin
+```

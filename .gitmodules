@@ -1,3 +1,9 @@
 [submodule "tmux/.tmux/plugins/tpm"]
 	path = tmux/.tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm.git
+[submodule "submodules/rofi-calc"]
+	path = submodules/rofi-calc
+	url = https://github.com/svenstaro/rofi-calc
+[submodule "submodules/rofi"]
+	path = submodules/rofi
+	url = https://github.com/adi1090x/rofi.git
