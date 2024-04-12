@@ -7,3 +7,6 @@
 [submodule "submodules/rofi"]
 	path = submodules/rofi
 	url = https://github.com/adi1090x/rofi.git
+[submodule "submodules/i3lock-color"]
+	path = submodules/i3lock-color
+	url = https://github.com/Raymo111/i3lock-color.git
