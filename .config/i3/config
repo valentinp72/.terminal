@@ -11,6 +11,11 @@ set $alt Mod1
 
 ################################################################################
 
+
 include $HOME/.config/i3/config.d/*.conf
+include $HOME/.config/i3/setups/vpelloin-dell:$NUM_DISPLAYS.conf
 
 ################################################################################
+
+bindsym $alt+o --release exec notify-send 'toto' $NUM_DISPLAYS
+
