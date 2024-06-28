@@ -33,13 +33,16 @@ try:
     def how_long_ago(timedelta):
         secs = timedelta.total_seconds()
         if secs < 60:
-            return f"{int(secs)} seconds"
+            n_seconds = int(secs)
+            return f"{n_seconds} second{'s' if n_seconds > 1 else ''}"
         elif secs < 3600:
-            return f"{int(secs//60)} minutes"
-        elif secs < 2600 * 24:
-            return f"{int(secs//3600)} hours"
+            n_minutes = int(secs // 60)
+            return f"{n_minutes} minute{'s' if n_minutes > 1 else ''}"
+        elif secs < 3600 * 24:
+            n_hours = int(secs // 3600)
+            return f"{n_hours} hour{'s' if n_hours > 1 else ''}"
         else:
-            return f"{secs.days} days"
+            return f"{timedelta.days} day{'s' if timedelta.days > 1 else ''}"
 
 
     if backup_status['success']:
@@ -57,3 +60,4 @@ try:
 
 except Exception as e:
     print(f"{color_error}{symbol_backup} Error with script")
+    print(e, last_backup)
