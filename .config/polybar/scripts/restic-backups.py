@@ -13,14 +13,18 @@ try:
 
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        '--backup_status_file', required=True, type=argparse.FileType('r')
+        '--backup_status_file', required=True, type=str,
     )
     args = parser.parse_args()
 
+    import os
     import json
-    all_status = json.load(args.backup_status_file)
-    args.backup_status_file.close()
 
+    if not os.path.isfile(args.backup_status_file):
+        print(f"{color_warning}{symbol_backup} Restic not found")
+        exit(0)
+    with open(args.backup_status_file, 'r') as f:
+        all_status = json.load(f)
 
     from datetime import datetime, timezone
     from dateutil.parser import isoparse
@@ -57,3 +61,4 @@ try:
 
 except Exception as e:
     print(f"{color_error}{symbol_backup} Error with script")
+    exit(0)
