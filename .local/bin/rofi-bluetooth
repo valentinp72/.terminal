@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+list=""
+while IFS= read -r l; do
+	uuid=$(echo $l | cut -d ' ' -f 2)
+	name=$(echo $l | cut -d ' ' -f 3-)
+	connected=$(bluetoothctl info "$uuid" | grep "Connected: yes")
+
+	if [ -z "$connected" ]; then
+		list="$list\n$uuid | $name"
+	else
+		list="$list\n$uuid | $name | [CONNECTED]"
+	fi
+done <<< $(bluetoothctl devices)
+
+connected=$(bluetoothctl show | grep Powered)
+if [[ "$connected" =~ "yes" ]]; then
+	toggle="󰂯 Disable Bluetooth"
+elif [[ "$connected" =~ "no" ]]; then
+	toggle="󰂯 Enable Bluetooth"
+fi
+
+chosen_network=$(echo -e "$toggle\n$list" | uniq -u | rofi -dmenu -i -selected-row 1 -p "Bluetooth devices: " )
+read -r chosen_id <<< "${chosen_network:3}"
+
+echo $chosen_network
+
+if [ "$chosen_network" = "" ]; then
+	exit
+elif [[ "$chosen_network" =~ "Enable Bluetooth" ]]; then
+	bluetoothctl power on
+elif [[ "$chosen_network" =~ "Disable Bluetooth" ]]; then
+	bluetoothctl power off
+else
+	uuid=$(echo $chosen_network | cut -d ' ' -f 1)
+	name=$(echo $chosen_network | cut -d '|' -f 2)
+	if [[ "$chosen_network" =~ "[CONNECTED]" ]]; then
+		bluetoothctl disconnect $uuid | grep "Successful disconnected" && notify-send "Disconnected from $name."
+	else
+		bluetoothctl connect $uuid | grep "Connection successful" && notify-send "Connected to $name." 
+	fi
+fi
