@@ -19,6 +19,10 @@ opacity = 0.9
 general = "Alacritty"
 instance = "Alacritty"
 
+[font.normal]
+# family="LiterationMonoNerdFont"
+family="JetBrainsMonoNerdFont"
+
 [keyboard]
 bindings = [
   { key = "Right", mods = "Alt | Shift", chars = "\u001BF" },
