@@ -1,0 +1,8 @@
+"xdotool sleep 0.1 type --clearmodifiers 'ç'"
+	Mod1 + c
+
+"xdotool sleep 0.1 type --clearmodifiers 'Ç'"
+    Mod1 + Shift + c
+
+"xdotool sleep 0.1 type --clearmodifiers '€'"
+    Mod1 + e
