@@ -17,5 +17,4 @@ include $HOME/.config/i3/setups/vpelloin-dell:$NUM_DISPLAYS.conf
 
 ################################################################################
 
-bindsym $alt+o --release exec notify-send 'toto' $NUM_DISPLAYS
-
+bindsym $alt+o --release exec notify-send 'Number of configured displays' $NUM_DISPLAYS
