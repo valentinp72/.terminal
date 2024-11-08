@@ -4,4 +4,6 @@ backups/
 *.pyc
 *.swp
 tmux/.tmux/resurrect/
+vim/plugged/
 swapfiles/
+.netrwhist

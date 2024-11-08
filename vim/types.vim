@@ -11,7 +11,7 @@ let g:ale_sign_warning = '⚠️'
 let g:ale_echo_msg_format = '[%linter% - %severity% %code%] %s'
 
 " Python
-let b:ale_linters = {'python': ['pylsp']}
+let g:ale_linters = {'python': ['pylsp']}
 
 let g:ale_completion_lsp = 0
 let g:ale_completion_lsp_servers = ['pylsp']
@@ -30,6 +30,10 @@ let g:ale_python_pylsp_config = {
 
 let g:ale_completion_enabled = 1
 let g:ale_completion_autoimport = 1
+let g:ale_hover_to_floating_preview = 1
+let g:ale_detail_to_floating_preview = 1
+let g:ale_floating_preview = 1
+set completeopt=menu,menuone,popup,noselect,noinsert
 
 " On JS files, enables JSDoc
 let g:javascript_plugin_jsdoc = 1

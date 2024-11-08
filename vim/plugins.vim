@@ -63,7 +63,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-scripts/Smooth-Scroll'
 
 " Minimap of the file
-Plug 'wfxr/minimap.vim'
+" Plug 'wfxr/minimap.vim'
 
 """""""""""""
 " LANGUAGES "

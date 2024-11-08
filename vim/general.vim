@@ -47,10 +47,10 @@ set ttimeoutlen=50
 set incsearch
 
 " Enable minimap
-let g:minimap_width = 10
-let g:minimap_auto_start = 0
-let g:minimap_auto_start_win_enter = 1
-let g:minimap_highlight_range = 1
+" let g:minimap_width = 10
+" let g:minimap_auto_start = 0
+" let g:minimap_auto_start_win_enter = 1
+" let g:minimap_highlight_range = 1
 
 set number
 

@@ -18,6 +18,10 @@ nnoremap <C-s> :Ag<CR>
 " Search files with Ctrl + P
 nnoremap <C-p> :Files<CR>
 
+" Autocomplete with words from the current buffer using Tab
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<C-x>\<C-n>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<C-x>\<C-p>"
+
 " -----------
 " - BUFFERS -
 " -----------

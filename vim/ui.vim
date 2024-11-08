@@ -47,6 +47,8 @@ set number     " show lines number
 set cursorline " show the line where the cursor is
 set hlsearch   " highlight search results
 
+set pumheight=10
+
 " columns after 80 are highlighted
 let &colorcolumn=join(range(81,999),",")
 
