@@ -58,11 +58,11 @@ highlight CursorLine ctermbg=235
 " - AIRLINE CONFIGURATION -
 " -------------------------
 
-let g:airline_theme='cool'                      " theme for airline
+let g:airline_theme='papercolor'                      " theme for airline
 let g:airline#extensions#whitespace#enabled = 0 " disables whistespace warning
 let g:airline#extensions#tabline#enabled = 1    " always show the tabline
 let g:airline#extensions#tabline#show_tab_type = 0 " disable 'buffer' info
-let g:airline#extensions#tabline#buffer_nr_show = 1 " show numering in tabs
+let g:airline#extensions#tabline#buffer_nr_show = 0 " show numering in tabs
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved' " format
 
 " Remove airline file %, and number of lines symbol
@@ -71,7 +71,7 @@ let g:airline_symbols.linenr = ''
 let g:airline_symbols.maxlinenr = ''
 
 " Remove fileencoding information
-let g:airline_section_y = ''
+" let g:airline_section_y = ''
 
 " ---------------------------
 " - SYNTASTIC CONFIGURATION -
@@ -83,10 +83,11 @@ let g:airline_section_y = ''
 "set cmdheight=2
 
 " enable syntastic in airline
-let g:airline#extensions#syntastic#enabled = 1
+" let g:airline#extensions#syntastic#enabled = 1
+let g:airline#extensions#ale#enabled = 1
 
 " Check when opening
-let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_open = 1
 
 " Symbols for errors and warnings
 "let g:syntastic_error_symbol = 'x'
@@ -95,16 +96,16 @@ let g:syntastic_check_on_open = 1
 "let g:syntastic_style_warning_symbol = '⚠︎'
 
 " Airline text
-let g:airline#extensions#syntastic#stl_format_err = '%e error(s)'
-let g:airline#extensions#syntastic#stl_format_warn = '%w warning(s)'
-let g:airline#extensions#syntastic#error_symbol = ''
-let g:airline#extensions#syntastic#warning_symbol = ''
+" let g:airline#extensions#syntastic#stl_format_err = '%e error(s)'
+" let g:airline#extensions#syntastic#stl_format_warn = '%w warning(s)'
+" let g:airline#extensions#syntastic#error_symbol = ''
+" let g:airline#extensions#syntastic#warning_symbol = ''
 
 " Show the symbols on a classic column, with normal background
-highlight link SyntasticErrorSign SignColumn
-highlight link SyntasticWarningSign SignColumn
-highlight link SyntasticStyleErrorSign SignColumn
-highlight link SyntasticStyleWarningSign SignColumn
+" highlight link SyntasticErrorSign SignColumn
+" highlight link SyntasticWarningSign SignColumn
+" highlight link SyntasticStyleErrorSign SignColumn
+" highlight link SyntasticStyleWarningSign SignColumn
 
 " Search in current file directory
 let g:ctrlp_working_path_mode = 'a'

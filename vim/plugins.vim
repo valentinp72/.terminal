@@ -21,13 +21,15 @@ Plug 'itchyny/vim-cursorword'
 Plug 'tpope/vim-commentary'
 
 " Checking with linters
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
+"
+Plug 'dense-analysis/ale'
 
 " Files finder
 " Plug 'kien/ctrlp.vim'
 
 " Autocompletion with tab
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 
 " Tabline
 Plug 'vim-airline/vim-airline'
