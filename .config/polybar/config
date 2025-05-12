@@ -34,8 +34,8 @@ font-1 = Symbols Nerd Font:size=12;style=Regular
 # icons can be searched here:
 # https://www.nerdfonts.com/cheat-sheet
 
-modules-left = xworkspaces xwindow
-modules-right = filesystem memory cpu resticbackup temperature wlan eth bluetooth battery xkeyboard pulseaudio date powermenu
+modules-left = xworkspaces xwindow 
+modules-right = tray filesystem memory cpu resticbackup temperature wlan eth bluetooth battery xkeyboard pulseaudio date powermenu 
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -49,6 +49,14 @@ enable-ipc = true
 ; wm-restack = i3
 
 ; override-redirect = true
+
+[module/tray]
+type = internal/tray
+
+format-margin = 8px
+tray-spacing = 8px
+tray-padding = 0px
+tray-size = 50%
 
 [module/powermenu]
 type = custom/text
